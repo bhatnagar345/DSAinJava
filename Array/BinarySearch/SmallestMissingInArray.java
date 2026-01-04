@@ -1,4 +1,4 @@
-package Array;
+package Array.BinarySearch;
 
 public class SmallestMissingInArray {
     static void smallest(int[] a, int low, int high) {
