@@ -35,18 +35,18 @@ public class LongestUniqueSubstring {
 
     // Main method to test with user input and test cases
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        // User input
-        System.out.print("Enter a string: ");
-        String input = sc.nextLine();
-
-        // Result from user input
-        int result = lengthOfLongestSubstring(input);
-        System.out.println("Length of longest substring without repeating characters: " + result);
+//        Scanner sc = new Scanner(System.in);
+//
+//        // User input
+//        System.out.print("Enter a string: ");
+//        String input = sc.nextLine();
+//
+//        // Result from user input
+//        int result = lengthOfLongestSubstring(input);
+//        System.out.println("Length of longest substring without repeating characters: " + result);
 
         // Additional test cases
-        System.out.println("Test Case 1: " + lengthOfLongestSubstring("abcabcbb")); // Expected: 3 ("abc")
+        System.out.println("Test Case 1: " + lengthOfLongestSubstring("abcbacbb")); // Expected: 3 ("abc")
         System.out.println("Test Case 2: " + lengthOfLongestSubstring("bbbbb"));    // Expected: 1 ("b")
         System.out.println("Test Case 3: " + lengthOfLongestSubstring("pwwkew"));   // Expected: 3 ("wke")
         System.out.println("Test Case 4: " + lengthOfLongestSubstring(""));         // Expected: 0
