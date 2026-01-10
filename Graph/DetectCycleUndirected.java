@@ -51,6 +51,7 @@ public class DetectCycleUndirected {
         adj.get(1).add(2); adj.get(2).add(1);
         adj.get(2).add(3); adj.get(3).add(2);
         adj.get(3).add(0); adj.get(0).add(3); // This edge forms a cycle
+        adj.get(2).add(4); adj.get(4).add(2);
 
         boolean result = hasCycle(V, adj);
         System.out.println("Cycle detected? " + result); // true
