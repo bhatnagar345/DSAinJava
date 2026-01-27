@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
-public class CreatingBinaryTree {
+public class AACreatingBinaryTree {
     private static void creatingTree(TreeNode node) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Give the root value : ");

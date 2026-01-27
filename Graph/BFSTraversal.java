@@ -13,7 +13,7 @@ public class BFSTraversal {
             int node = queue.poll();
             System.out.print(node + " ");
             for(int e : graph.get(node)){
-                if(visited[e] == false){
+                if(!visited[e]){
                     queue.add(e);
                     visited[e] = true;
                 }

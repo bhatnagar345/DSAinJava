@@ -17,7 +17,7 @@ package Array;
 
 public class ProductOfArrayExceptSelf {
     public static void main(String[] args) {
-        int[] nums = {-1,1,0,-3,3};
+        int[] nums = {1,2,3,4};
         int t = 1;
         int[] temp = new int[nums.length];
         for(int i =0;i<nums.length;i++)

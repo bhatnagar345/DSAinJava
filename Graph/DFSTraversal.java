@@ -9,7 +9,7 @@ public class DFSTraversal {
         v[start] = true;
         System.out.print(start + " ");
         for(int e : graph.get(start)){
-            if(v[e] == false){
+            if(!v[e]){
                 dfs(e,v,graph);
             }
         }
