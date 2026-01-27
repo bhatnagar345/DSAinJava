@@ -19,7 +19,6 @@ package Array.Intervals;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
 public class InsertInterval {
@@ -28,7 +27,7 @@ public class InsertInterval {
         int[] newInterval = {4,8};
         List<int[]> intervalList = new ArrayList<>(Arrays.asList(intervals));
         intervalList.add(newInterval);
-        Collections.sort(intervalList, (a, b) -> Integer.compare(a[0], b[0]));
+        intervalList.sort((a, b) -> Integer.compare(a[0], b[0]));
 
         List<int[]> res = new ArrayList<>();
         int[] current = intervalList.get(0);

@@ -23,7 +23,6 @@ public class LargestNumberFromArray {
                 String order1 = a + b; // "a" followed by "b"
                 String order2 = b + a; // "b" followed by "a"
                 return order2.compareTo(order1); // descending order
-
         });
 
         // Edge case: if the largest number is "0", return "0"
@@ -31,11 +30,11 @@ public class LargestNumberFromArray {
             return "0";
         }
 
-        // Build the final largest number
-        StringBuilder result = new StringBuilder();
-        for (String str : strNums) {
-            result.append(str);
-        }
+//        Build the final largest number
+//        StringBuilder result = new StringBuilder();
+//        for (String str : strNums) {
+//            result.append(str);
+//        }
 
         return Arrays.toString(strNums);
     }

@@ -6,34 +6,35 @@ public class Anagram {
 
     // Function to check if two strings are anagrams
     public static boolean areAnagrams(String str1, String str2) {
-        // Step 1: If lengths are not equal, they can't be anagrams
+
         if (str1.length() != str2.length()) {
             return false;
         }
 
-        // Step 2: Create a frequency array for 26 lowercase letters
-        int[] charCount = new int[26];
+        int[] charCount = new int[52];
 
-        // Step 3: Count frequency from the first string
-        for (int i = 0; i < str1.length(); i++) {
-            // Increment the count for the character in str1
-            charCount[str1.charAt(i) - 'a']++;
-        }
-
-        // Step 4: Decrease frequency from the second string
-        for (int i = 0; i < str2.length(); i++) {
-            // Decrement the count for the character in str2
-            charCount[str2.charAt(i) - 'a']--;
-        }
-
-        // Step 5: Check if all counts are zero
-        for (int count : charCount) {
-            if (count != 0) {
-                return false;  // If any count is not zero, they are not anagrams
+        for (char ch : str1.toCharArray()) {
+            if (ch >= 'A' && ch <= 'Z') {
+                charCount[ch - 'A']++;
+            } else if (ch >= 'a' && ch <= 'z') {
+                charCount[ch - 'a' + 26]++;
             }
         }
 
-        // If all counts are zero, then they are anagrams
+        for (char ch : str2.toCharArray()) {
+            if (ch >= 'A' && ch <= 'Z') {
+                charCount[ch - 'A']--;
+            } else if (ch >= 'a' && ch <= 'z') {
+                charCount[ch - 'a' + 26]--;
+            }
+        }
+
+        for (int count : charCount) {
+            if (count != 0) {
+                return false;
+            }
+        }
+
         return true;
     }
 
@@ -58,5 +59,7 @@ public class Anagram {
         } else {
             System.out.println(str3 + " and " + str4 + " are NOT anagrams.");
         }
+
+
     }
 }

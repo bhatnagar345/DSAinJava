@@ -13,7 +13,7 @@ public class ValidateBST {
         if (node == null) return true; // Empty tree is valid
 
         // Check if current node violates min or max constraint
-        if ((node.val <= min) || (max != null))
+        if ((node.val <= min) || (node.val >= max))
             return false;
 
         // Left subtree: max becomes current node's value

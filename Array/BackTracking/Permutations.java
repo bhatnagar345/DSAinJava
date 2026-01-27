@@ -10,7 +10,6 @@ public class Permutations {
 
     public static List<List<Integer>> permute(int[] nums) {
         List<List<Integer>> ans = new ArrayList<>();
-        List<Integer> temp = new ArrayList<>();
 
         backTrack(ans, 0, nums);
         return ans;

@@ -17,7 +17,7 @@ public class FindTheDuplicateNumber {
 //    floyd’s Tortoise & Hare (Cycle Detection) – ⭐ MUST KNOW
 //💡  Why it works
 //    Treat array as a linked list
-//    Duplicate create\s a cycle
+//    Duplicate creates a cycle
 //    Same logic as detecting cycle in linked list
 
         public static int findDuplicate(int[] nums) {
