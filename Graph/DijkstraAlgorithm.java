@@ -31,7 +31,7 @@ import java.util.*;
 
 public class DijkstraAlgorithm {
 
-    //In Dijkstra we can use this algorithm in negative weighted graph, because it will into infinite loop.
+    //In Dijkstra we can not use this algorithm in negative weighted graph, because it will into infinite loop.
     // time complexity - O(ElogV)
     // using priorityQueue over queue because it will take the less weight first so it will take less time
 

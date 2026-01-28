@@ -30,12 +30,6 @@ public class LargestNumberFromArray {
             return "0";
         }
 
-//        Build the final largest number
-//        StringBuilder result = new StringBuilder();
-//        for (String str : strNums) {
-//            result.append(str);
-//        }
-
         return Arrays.toString(strNums);
     }
 
