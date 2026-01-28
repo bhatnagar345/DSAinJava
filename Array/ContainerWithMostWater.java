@@ -2,7 +2,7 @@ package Array;
 
 public class ContainerWithMostWater {
     public static void main(String[] args) {
-        int[] height = {1,1};
+        int[] height = {1,7,5,4,1,9,8,6,0,9,2};
         int ans =0;
         int maxi = 0;
         int i =0;
